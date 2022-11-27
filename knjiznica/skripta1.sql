@@ -46,3 +46,28 @@ where sifra in (5,6);
 update autor
 set ime = 'Isidora',prezime = 'Karanic'
 where sifra=4;
+
+select * from autor;
+
+select * from autor a 
+where datumrodenja between '1980-01-01' and '1980-12-31';
+
+select * from katalog k ;
+
+select * from katalog k 
+where naslov like '%ljubav%';
+
+select * from katalog k 
+where naslov like '%ljubav%'
+and sifra not in (27840,3031);
+
+select * from izdavac i ;
+
+select * from izdavac i 
+where naziv like '%d%o%o%'
+and naziv not like '%j%d%';
+
+select * from katalog k ;
+
+delete from katalog 
+where naslov like '%ljubav%';
