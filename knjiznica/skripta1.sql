@@ -21,3 +21,9 @@ where i.aktivan = 1;
 
 
 select * from izdavac i ;
+
+SELECT *
+FROM katalog k
+inner JOIN mjesto m 
+ON k.mjesto = m.sifra 
+where m.drzava  = 'Hrvatska';
