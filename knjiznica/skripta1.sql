@@ -10,3 +10,14 @@ where naslov like '%smrt%';
 
 delete from katalog 
 where naslov like '%smrt%';
+
+SELECT i.aktivan, i.naziv , i.sifra 
+FROM katalog k
+inner JOIN izdavac i
+ON k.izdavac = i.sifra
+where i.aktivan = 1;
+
+
+
+
+select * from izdavac i ;
