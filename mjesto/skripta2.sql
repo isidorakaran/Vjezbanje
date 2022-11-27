@@ -22,3 +22,6 @@ where zupanija = 14;
 
 select * from mjesto m 
 where naziv like '%nt';
+
+select * from mjesto m 
+where zupanija !=1;
