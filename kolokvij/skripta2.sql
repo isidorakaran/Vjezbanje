@@ -3,7 +3,7 @@ create database baza2;
 use baza2;
 
 create table decko(
-    sifra int not null primary key auto_increment,
+   sifra int not null primary key auto_increment,
    indeferntno bit,
    vesta varchar(34),
    asocijalno bit not null
@@ -76,4 +76,31 @@ alter table decko_zarucnica add foreign key (zarucnica) references zarucnica(sif
 alter table cura add foreign key (decko) references decko(sifra);
 alter table neprijatelj add foreign key (cura) references cura(sifra);
 alter table brat add foreign key (neprijatelj) references neprijatelj(sifra);
+
+insert into decko(asocijalno)
+values (1),(0),(0) ;
+
+insert into neprijatelj (haljina,modelnaocala,kuna)
+values ('zelena','gucci',1499.99),
+('plava','ray ban',2199.99),
+('smedja','pilot',600)
+;
+
+insert into cura (haljina,drugiputa,majica)
+values ('crna','2022-02-02','smedja'),
+('zuta','2022-03-03','plava'),
+('crvena','2022-04-04','smedja');
+
+insert into zarucnica (bojakose,lipa,indeferntno)
+values('crna',50,1),('plava',34,0),('smedja',70,0);
+
+insert into decko_zarucnica  (decko,zarucnica)
+values (1,2),(2,1),(5,6);
+
+select * from cura;
+select * from neprijatelj;
+select * from decko_zarucnica;
+select * from zarucnica;
+select * from decko;
+
 
