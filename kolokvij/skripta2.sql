@@ -103,4 +103,25 @@ select * from decko_zarucnica;
 select * from zarucnica;
 select * from decko;
 
+update prijatelj 
+set treciputa='2020-30-04';
+
+select * from prijatelj;
+
+delete from brat 
+where ogrlica!=14;
+
+select suknja
+from cura 
+where drugiputa is null;
+
+select f.novcica, a.neprijatelj, b.haljina 
+from brat a
+inner join neprijatelj b on a.neprijatelj =b.sifra 
+inner join cura c on b.cura =c.sifra 
+inner join decko d on c.decko =d.sifra 
+inner join decko_zarucnica e on d.sifra =e.decko 
+inner join zarucnica f on e.zarucnica =f.sifra 
+where  d.vesta  like '%ba%'
+order by b.haljina desc;
 
