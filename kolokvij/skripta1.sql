@@ -131,3 +131,7 @@ inner join svekar f on e.svekar =f.sifra
 where c.hlace like 'a%' and d.haljina like '%ba%'
 order by b.hlace desc ;
 
+select a.haljina ,a.maraka 
+from sestra a
+left join sestra_svekar b on a.sifra =b.sestra 
+where b.sestra is null;
