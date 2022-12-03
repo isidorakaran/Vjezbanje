@@ -122,6 +122,10 @@ inner join cura c on b.cura =c.sifra
 inner join decko d on c.decko =d.sifra 
 inner join decko_zarucnica e on d.sifra =e.decko 
 inner join zarucnica f on e.zarucnica =f.sifra 
-where  d.vesta  like '%ba%'
+where  c.drugiputa is null and d.vesta  like '%ba%'
 order by b.haljina desc;
 
+select a.vesta ,a.asocijalno 
+from decko a
+left join decko_zarucnica b on a.sifra =b.decko 
+where b.decko is null;
