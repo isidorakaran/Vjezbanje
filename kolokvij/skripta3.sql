@@ -114,3 +114,28 @@ select * from ostavljena;
 select * from prijatelj_brat;
 select * from brat;
 select * from prijatelj;
+
+update table svekar 
+set suknja = 'Osijek';
+
+delete from punica 
+where kratkamajica = 'AB';
+
+select majica
+from ostavljena 
+where lipa !=(9,10,20,30,35);
+
+select f.ekstrovertno,a.vesta ,b.kuna 
+from punica a
+inner join snasa b on a.snasa =b.sifra 
+inner join ostavljena c on b.ostavljena =c.sifra 
+inner join prijatelj d on c.prijatelj =d.sifra 
+inner join prijatelj_brat e on d.sifra =e.prijatelj 
+inner join brat f on e.brat =f.sifra 
+where c.lipa !=91 and d.haljina like '%ba%'
+order by 3 desc;
+
+select a.haljina,a.lipa
+from prijatelj a
+left join prijatelj_brat b on a.sifra =b.prijatelj 
+where b.prijatelj is null;
