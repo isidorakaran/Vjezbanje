@@ -103,3 +103,23 @@ select * from zena;
 select * from zena_mladic;
 select * from snasa;
 select * from becar;
+
+update punac 
+set majica='Osijek';
+
+delete from prijatelj 
+where prstena > 17;
+
+select haljina
+from snasa 
+where treciputa is null;
+
+select f.nausnica ,a.jmbag ,b.kratkamajica 
+from prijatelj a
+inner join becar b on a.becar =b.sifra 
+inner join snasa c on b.snasa =c.sifra 
+inner join zena d on c.zena =d.sifra 
+inner join zena_mladic e on d.sifra =e.zena 
+inner join mladic f on e.mladic =f.sifra 
+where c.treciputa is not null and d.lipa !=29
+order by 3 desc;
