@@ -123,3 +123,8 @@ inner join zena_mladic e on d.sifra =e.zena
 inner join mladic f on e.mladic =f.sifra 
 where c.treciputa is not null and d.lipa !=29
 order by 3 desc;
+
+select a.lipa ,a.prstena 
+from zena a
+left join zena_mladic b on a.sifra =b.zena 
+where b.sifra is null;
