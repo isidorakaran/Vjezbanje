@@ -108,3 +108,28 @@ values('crne',1.99,'crna'),
 
 select * from cura;
 select * from svekar;
+
+update mladic 
+set haljina='Osijek';
+
+delete from ostavljena 
+where ogrlica =17;
+
+select majica
+from punac 
+where prviputa is null;
+
+select f.asocijalno , a.stilfrizura , b.nausnica 
+from ostavljena a
+inner join punica b on a.punica =b.sifra 
+inner join punac c on b.punac =c.sifra 
+inner join svekar d on c.svekar =d.sifra 
+inner join svekar_cura e on d.sifra =e.svekar 
+inner join cura f on e.cura =f.sifra 
+where c.prviputa is not null and d.majica like '%ba%'
+order by 3 desc;
+
+select a.majica ,a.carape 
+from svekar a
+left join svekar_cura b on a.sifra =b.svekar 
+where b.sifra is null;
