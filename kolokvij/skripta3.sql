@@ -123,7 +123,11 @@ where kratkamajica = 'AB';
 
 select majica
 from ostavljena 
-where lipa !=(9,10,20,30,35);
+where lipa !=9 and
+lipa !=10 and 
+lipa !=20 and
+lipa !=30 and 
+lipa !=35);
 
 select f.ekstrovertno,a.vesta ,b.kuna 
 from punica a
