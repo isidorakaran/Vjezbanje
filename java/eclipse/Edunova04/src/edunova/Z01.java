@@ -8,9 +8,16 @@ public class Z01 {
 	 // zbroj svih parnih brojeva
 	 // između dva unesena broja
 	public static void main(String[] args) {
-		int i=Integer.parseInt(JOptionPane.showInputDialog("Unesi prvi broj"));
-		int j=Integer.parseInt(JOptionPane.showInputDialog("Unesi drugi broj"));
+		int x=Integer.parseInt(JOptionPane.showInputDialog("Unesi prvi broj"));
+		int y=Integer.parseInt(JOptionPane.showInputDialog("Unesi drugi broj"));
 	int zbroj=0;
+	for(int i=x;i<=y;i++) {
+		if(i%2==0) {
+			zbroj+=i;
+		}
+		
+	}
+	System.out.println(zbroj);
 	}
 	
 

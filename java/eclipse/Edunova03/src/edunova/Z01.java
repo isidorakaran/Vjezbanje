@@ -9,7 +9,7 @@ public class Z01 {
 		// inače se ispisuje Donji Miholjac
 	public static void main(String[] args) {
 		int i=Integer.parseInt(JOptionPane.showInputDialog("Unesi broj"));
-		if(i<=10) {
+		if(i<10) {
 			System.out.println("Osijek");
 		}else {
 			System.out.println("Donji Miholjac");

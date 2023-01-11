@@ -96,9 +96,9 @@ public static void main(String[] args) {
 			System.out.println();
 		}
 	
-		for(;;) {
-			System.out.println(Math.random());
-		}
+		//for(;;) {
+			//System.out.println(Math.random());
+		//}
 		
 	}
 

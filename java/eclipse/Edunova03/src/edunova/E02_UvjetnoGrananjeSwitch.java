@@ -18,6 +18,7 @@ public class E02_UvjetnoGrananjeSwitch {
 			break;
 		case 2:
 			System.out.println("Pozitivna");
+			
 		case 3:
 			System.out.println("Pozitivna");
 			default: {

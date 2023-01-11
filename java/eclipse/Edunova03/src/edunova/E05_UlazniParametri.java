@@ -1,5 +1,6 @@
 package edunova;
 
+
 public class E05_UlazniParametri {
 	public static void main(String[] args) {
 		if(args.length!=2) {
