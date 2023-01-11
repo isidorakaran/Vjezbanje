@@ -9,6 +9,7 @@ public class Z01 {
 			int zbroj =0, broj=1;
 			while(broj<=100) {
 				zbroj +=broj;
+				broj++;
 			}
 			System.out.println(zbroj);
 		
