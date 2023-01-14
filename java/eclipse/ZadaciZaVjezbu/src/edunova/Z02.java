@@ -14,7 +14,7 @@ public class Z02 {
 	double suma=0;
 	for(int i=1;i<=n;i++) {
 	
-			suma+=1/i;
+			suma+=(double)1/i;
 		}
 	
 	System.out.println("Zbroj " + n + " članova niza iznosi " + suma);
