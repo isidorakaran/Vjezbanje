@@ -22,9 +22,9 @@ public class Z01 {
 			
 		}
 	
-		System.out.println(zbroj);
-		System.out.println(min);
-		System.out.println(max);
+		System.out.println("Zbroj unesenih brojeva je " + zbroj);
+		System.out.println("Najmanji uneseni broj je " + min);
+		System.out.println("Najveći uneseni broj je " + max);
 	}
 
 }
