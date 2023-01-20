@@ -1,6 +1,6 @@
 package edunova;
 
-public class E08 {
+public class Z08 {
 	//Potražite pa ispišite brojeve djeljive sa 7 iz raspona od 200 do 300
 	//ispis neka bude oblika:
 	//Brojevi djeljivi sa 7 iz raspona 200 do 300 su:
