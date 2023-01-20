@@ -52,7 +52,7 @@ public class Z05 {
 
 			}
 			System.out.println();
-			
+
 		}
 		for (int i = 1; i <= 31; i++) {
 			System.out.print("-");
@@ -65,6 +65,5 @@ public class Z05 {
 
 		}
 	}
-	
 
 }
