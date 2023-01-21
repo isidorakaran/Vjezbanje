@@ -14,7 +14,7 @@ public class Z09 {
 		int n;
 		int brojac=0;
 		int zbroj=0;
-		float srednjaVrijednost=0;
+		int srednjaVrijednost=0;
 		JOptionPane.showMessageDialog(null,"Nakon posljednjeg broja unesi 0!");
 		do {
 			n=Integer.parseInt(JOptionPane.showInputDialog("Unesi broj:"));	
