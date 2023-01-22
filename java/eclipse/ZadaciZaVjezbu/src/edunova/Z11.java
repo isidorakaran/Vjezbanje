@@ -12,20 +12,26 @@ public class Z11 {
 		int ocjena;
 		int brojac=0;
 		JOptionPane.showMessageDialog(null,"Nakon posljednje ocjene treba unijeti 0.");
+		boolean ind=false;
 		do {
 			ocjena=Integer.parseInt(JOptionPane.showInputDialog("Unesi ocjenu"));
 			if(ocjena==1) {
 				JOptionPane.showMessageDialog(null, "Negativan uspjeh");
+				ind=true;
+				break;
 			}
-			if(ocjena<1 && ocjena>5) {
+			if(ocjena<0 || ocjena>5) {
 				JOptionPane.showMessageDialog(null,"Pogrešan unos.");
 			}
 			zbrojOcjena+=ocjena;
 			brojac++;
 		}while(ocjena!=0);
-		brojac-=1;
-		srednjaOcjena=zbrojOcjena/brojac;
-		System.out.println("Srednja ocjena uspjeha je "+srednjaOcjena);
+		if(!ind) {
+			brojac-=1;
+			srednjaOcjena=zbrojOcjena/brojac;
+			System.out.println("Srednja ocjena uspjeha je "+srednjaOcjena);
+		}
+		
 	}
 
 }
