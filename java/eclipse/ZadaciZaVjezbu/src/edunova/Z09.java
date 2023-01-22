@@ -13,15 +13,15 @@ public class Z09 {
 	public static void main(String[] args) {
 		int n;
 		int brojac=0;
-		int zbroj=0;
-		int srednjaVrijednost=0;
+		float zbroj=0;
+		float srednjaVrijednost=0;
 		JOptionPane.showMessageDialog(null,"Nakon posljednjeg broja unesi 0!");
 		do {
 			n=Integer.parseInt(JOptionPane.showInputDialog("Unesi broj:"));	
 			zbroj+=n;
 			brojac++;
 		}while(n!=0);
-		
+		brojac-=1;
 		srednjaVrijednost=zbroj/brojac;
 		System.out.println("Unešeno je "+brojac+" brojeva. Srednja vrijednost je "+ srednjaVrijednost);
 		
