@@ -27,7 +27,7 @@ public class ObrnutaCiklicna {
 			}
 
 			j = jPocetak;
-			for (i = jPocetak; i < iKraj; i++) {
+			for (i = iPocetak; i < iKraj; i++) {
 				if (vrijednost > m * n) {
 					break;
 				} else {
@@ -78,7 +78,7 @@ public class ObrnutaCiklicna {
 			jKraj--;
 			if (vrijednost == m * n) {
 				jKraj++;
-				vrijednost--;
+
 			}
 			if (vrijednost > m * n)
 				break;
