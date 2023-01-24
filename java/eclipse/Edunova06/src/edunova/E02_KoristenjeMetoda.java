@@ -21,6 +21,11 @@ public static void main(String[] args) {
 		
 		
 		System.out.println(E01_VrsteMetoda.m4_prim(17));
+		int ij=Z03.zbroji("Isidora", "Karan");
+		System.out.println(ij);
+		
+		double m=Z05.zbroj(1.2,0.2);
+		System.out.println(m);
 		
 		
 	}
