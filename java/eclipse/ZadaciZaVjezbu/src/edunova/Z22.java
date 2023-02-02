@@ -12,12 +12,12 @@ public static void main(String[] args) {
 	float zbroj = 0;
 	JOptionPane.showMessageDialog(null, "Nakon posljednjeg broja unesi 0!");
 	int n = Integer.parseInt(JOptionPane.showInputDialog("Unesi broj:"));
-	zbroj += n;
 
 	while(n!=0) {
-		n = Integer.parseInt(JOptionPane.showInputDialog("Unesi broj:"));
-		zbroj += n;
 		brojac++;
+		zbroj += n;
+		n = Integer.parseInt(JOptionPane.showInputDialog("Unesi broj:"));
+
 	} 
 	System.out.println("Srednja vrijednost je "+(zbroj/brojac));
 
