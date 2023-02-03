@@ -2,7 +2,7 @@ package edunova;
 
 import javax.swing.JOptionPane;
 
-public class E24 {
+public class Z24 {
 	//Potrebno je ispisati prvih N neparnih brojeva. Ispis neka bude oblika:
 public static void main(String[] args) {
 	int i;

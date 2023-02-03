@@ -2,7 +2,7 @@ package edunova;
 
 import javax.swing.JOptionPane;
 
-public class E23 {
+public class Z23 {
 	// Treba ispisati tablicu množenja odabranog broja sa brojevima od 1 do 10. Broj
 	// bira korisnik.
 	public static void main(String[] args) {
