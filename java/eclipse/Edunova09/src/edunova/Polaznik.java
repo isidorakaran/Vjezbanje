@@ -26,7 +26,7 @@ public class Polaznik extends Osoba {
 				broj=3;
 	}
 	@Override
-	public String pozdravi() {
+public String pozdravi() {
 		
 		return "Polazniče "+super.pozdravi();
 	}

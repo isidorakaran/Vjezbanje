@@ -7,6 +7,7 @@ import edunova.Predavac;
 
 public class NaciniPristupa {
 public static void main(String[] args) {
+	
 	Polaznik p=new Polaznik("Pero", "Perić","12345tg");
 	System.out.println(p.pozdravi());
 	nasljedivanje(p);

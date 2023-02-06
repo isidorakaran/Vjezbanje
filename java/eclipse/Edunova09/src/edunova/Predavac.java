@@ -4,7 +4,7 @@ public class Predavac extends Osoba{
 	private String iban;
 
 	public Predavac() {
-		super();
+		System.out.println("Konstruktor Predavac");
 	}
 
 	public Predavac(String ime, String prezime, String iban) {
