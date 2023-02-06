@@ -26,6 +26,7 @@ public static void main(String[] args) {
 		
 		double m=Z05.zbroj(1.2,0.2);
 		System.out.println(m);
+		System.out.println(E04_Rekurzija.zbroj(3));
 		
 		
 	}

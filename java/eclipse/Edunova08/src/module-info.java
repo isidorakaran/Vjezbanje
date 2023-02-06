@@ -5,5 +5,6 @@
  * @author WinUSER
  *
  */
-module Edunova11 {
+module Edunova08 {
+	requires java.desktop;
 }
