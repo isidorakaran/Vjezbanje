@@ -1,6 +1,6 @@
 package edunova.model;
 
-public class Polaznik extends Osoba{
+public class Polaznik extends Osoba {
 	private String brojUgovora;
 
 	public Polaznik() {
@@ -19,6 +19,5 @@ public class Polaznik extends Osoba{
 	public void setBrojUgovora(String brojUgovora) {
 		this.brojUgovora = brojUgovora;
 	}
-
 
 }
