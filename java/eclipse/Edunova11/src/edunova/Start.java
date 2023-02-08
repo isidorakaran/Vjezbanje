@@ -8,16 +8,14 @@ import edunova.obrada.Predavaci;
 import edunova.obrada.Smjerovi;
 
 public class Start {
-	
+
 	private Smjerovi smjerovi;
 	private Polaznici polaznici;
 	private Predavaci predavaci;
 	private Grupe grupe;
-	
-	
-	
+
 	public Start() {
-		
+
 		Pomocno.ulaz = new Scanner(System.in);
 		smjerovi = new Smjerovi(this);
 		polaznici = new Polaznici(this);
@@ -26,7 +24,7 @@ public class Start {
 		pozdravnaPoruka();
 		glavniIzbornik();
 	}
-	
+
 	public void glavniIzbornik() {
 		System.out.println("");
 		System.out.println("GLAVNI IZBORNIK");
@@ -36,15 +34,12 @@ public class Start {
 		System.out.println("3. Polaznici");
 		System.out.println("4. Predavači");
 		System.out.println("5. Izlaz iz programa");
-		
-		
-		
+
 		odabirGlavnogIzbornika();
 	}
 
 	private void odabirGlavnogIzbornika() {
-		switch(Pomocno
-				.unosBrojRaspon("Odabrana opcija: ",1,5)) {
+		switch (Pomocno.unosBrojRaspon("Odabrana opcija: ", 1, 5)) {
 		case 1:
 			smjerovi.izbornik();
 			break;
@@ -57,19 +52,13 @@ public class Start {
 		case 5:
 			System.out.println("Doviđenja!");
 		}
-		
+
 	}
-
-	
-
-	
 
 	private void pozdravnaPoruka() {
 		System.out.println("Dobrodošli u Edunova terminal aplikaciju");
-		
+
 	}
-	
-	
 
 	public Polaznici getPolaznici() {
 		return polaznici;
@@ -80,10 +69,10 @@ public class Start {
 	}
 
 	public static void main(String[] args) {
-		if(args.length==1) {
-			Pomocno.DEV=true;
-		}else {
-			Pomocno.DEV=false;
+		if (args.length == 1) {
+			Pomocno.DEV = true;
+		} else {
+			Pomocno.DEV = false;
 		}
 		new Start();
 	}
