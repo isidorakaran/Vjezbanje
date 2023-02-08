@@ -13,7 +13,7 @@ public class Start {
 	private Polaznici polaznici;
 	private Predavaci predavaci;
 	private Grupe grupe;
-	private Isidorka isidorka;
+	
 	
 	
 	public Start() {
