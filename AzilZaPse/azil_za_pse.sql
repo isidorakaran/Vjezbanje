@@ -44,6 +44,4 @@ create table  vrsta_transakcije(
 alter table pas_transakcija add foreign key (pas) references pas(sifra);
 alter table pas_transakcija add foreign key(transakcija) references transakcija(sifra);
 alter table transakcija add foreign key(vrsta_transakcije) references vrsta_transakcije(sifra);
-alter table transakcija add foreign key(osoba) references vrsta_transakcije(osoba);
-
-
+alter table transakcija add foreign key(osoba) references osoba(sifra);
